@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BrokenGlasses</string>
+
+    <string name="request_sign_up"> <u>아직 회원이 아니신가요?</u></string>
+
+    <string name="btn_add">추가하기</string>
+    <string name="btn_personal_register">선수등록</string>
+    <string name="btn_team_register">팀등록</string>
+
+    <string name="name_tag">선수이름</string>
+    <string name="birthday">Birthday</string>
+    <string name="birthday_sample">연도-월-일 (ex. 2000-01-01)</string>
+    <string name="height">Height (Cm)</string>
+    <string name="weight">Weight (Kg)</string>
+    <string name="job">Job</string>
+    <string name="region">Region</string>
+    <string name="myRegion">선호지역(1개 이상)</string>
+    <string name="position">Position</string>
+
+    <string name="team_name_tag">팀 이름</string>
+    <string name="team_name_check">TEAM NAME CHECK</string>
+    <string name="team_birth">TEAM BIRTH</string>
+    <string name="formation">Formation(1개 이상)</string>
+</resources>

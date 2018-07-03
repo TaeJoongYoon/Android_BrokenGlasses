@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <data>
+        <variable
+            name="listJoin"
+            type="com.yoon.brokenglasses.Model.network.ListTeamJoinResponse"/>
+        <variable
+            name="presenter"
+            type="com.yoon.brokenglasses.Alarm.AlarmPresenter"
+            />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/apart"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{listJoin.user.userName}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{listJoin.date}"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승인"
+            android:onClick="@{()->presenter.onClickConfirm(listJoin)}"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="거부"
+            android:onClick="@{()->presenter.onClickNotConfirm(listJoin)}"
+            />
+    </LinearLayout>
+</layout>
